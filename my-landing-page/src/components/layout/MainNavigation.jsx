@@ -7,6 +7,13 @@ export default function MainNavigation() {
   return (
     <div>
       <header className={classes.header}>
+        <div >
+          <img src="/images/Cuppa coffee.png" className={classes.logo} />
+        <div className={classes.headerContent}>
+          <h1>Brewing Joy, One Cup at a Time</h1>
+          <button className={classes.btn}>Discover more</button>
+        </div>
+        </div>
         <nav className={classes.nav}>
             <ul>
                 <li>
