@@ -1,0 +1,14 @@
+.heroSide {
+    position: relative;
+    max-width: 480px; 
+    height: 500px;
+    /* background: purple; */
+    border-radius: 10px 10px 50% 50%;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px; 
+    text-align: center;
+  }

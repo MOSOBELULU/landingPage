@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 import classes from './MainNavigation.module.css'
 
 
@@ -13,13 +13,13 @@ export default function MainNavigation() {
                     <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/about'>Menu</Link>
+                    <Link to='/menu'>Menu</Link>
                 </li>
                 <li>
-                    <Link to='/projects'>Shop</Link>
+                    <Link to='/shop'>Shop</Link>
                 </li>
                 <li>
-                    <Link to='/projects'>Gallery</Link>
+                    <Link to='/gallery'>Gallery</Link>
                 </li>
                 <li>
                     <Link to='/contact'>Contact</Link>

@@ -1,18 +1,38 @@
-//import { useState } from 'react'
-import MainNavigation from './components/layout/MainNavigation'
-
-import './App.css'
+import { Route, Switch } from 'react-router-dom';
+import MainNavigation from './components/layout/MainNavigation';
+import Home from './components/Home';
+import Menu from './components/Menu';
+import Shop from './components/Shop';
+import Gallery from './components/Gallery';
+import Contact from './components/Contact';
+import './App.css';
 
 function App() {
-  
-
   return (
-    <>
-    <MainNavigation/>
-    <h1>coffee shop</h1>
-    </>
-  )
+    <div>
+      <MainNavigation />
+      <Switch>
+      <Route path='/' exact>
+          <Home />
+        </Route>
+        <Route path='/menu'>
+          <Menu />
+        </Route>
+        <Route path='/shop'>
+          <Shop />
+        </Route>
+        <Route path=' /gallery'>
+          <Gallery />
+        </Route>
+        <Route path='/gallery'>
+          <Gallery />
+        </Route>
+        <Route path='/contact'>
+          <Contact />
+        </Route>
+      </Switch>
+    </div>
+  );
 }
 
-export default App
-// https://cdn.dribbble.com/users/2530765/screenshots/6707144/coffee_shop_4x.jpg?compress=1&resize=1600x1200
+export default App;
